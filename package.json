@@ -1,6 +1,6 @@
 {
   "name": "round10",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Brings decimal adjustment to the Math object.",
   "main": "round10.js",
   "directories": {

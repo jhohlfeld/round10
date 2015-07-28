@@ -1,8 +1,6 @@
-#Math.round10 polyfill
-
 Inspired by [Decimal rounding polyfill by MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Math/round#Decimal_rounding).
 
-##Installation
+__Installation__
 
 Install using npm:
 
@@ -10,7 +8,7 @@ Install using npm:
 $ npm install round10
 ```
 
-##Usage
+__Usage__
 
 Use in your project:
 
@@ -25,7 +23,7 @@ require('round10').polyfill();
 Math.round10(55.55, -1); // 55.6
 ```
 
-##Check out the code:
+__Check out the code__
 
 ```bash
 $ git clone git@github.com:jhohlfeld/round10.git
