@@ -1,15 +1,16 @@
 {
   "name": "round10",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Brings decimal adjustment to the Math object.",
   "main": "round10.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "should": "^7.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "mocha test/test.js"
   },
