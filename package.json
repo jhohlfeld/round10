@@ -1,0 +1,36 @@
+{
+  "name": "round10",
+  "version": "1.0.0",
+  "description": "Brings decimal adjustment to the Math object.",
+  "main": "round10.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "should": "^7.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhohlfeld/round10.git"
+  },
+  "keywords": [
+    "round",
+    "round10",
+    "mdn",
+    "Math",
+    "Math.round",
+    "precision",
+    "decimal",
+    "adjustment"
+  ],
+  "author": "Jakob Hohlfeld <jhohlfeld@polyban.io>",
+  "license": "CC-BY-SA-2.5",
+  "bugs": {
+    "url": "https://github.com/jhohlfeld/round10/issues"
+  },
+  "homepage": "https://github.com/jhohlfeld/round10#readme"
+}
