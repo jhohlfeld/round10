@@ -19,6 +19,13 @@ $ npm install --save round10
 and in your code:
 
 ```javascript
+var round10 = require('round10').round10;
+round10(55.55, -1); // 55.6
+```
+
+Optionally, you may use the polyfill which extends the global Math object:
+
+```javascript
 require('round10').polyfill();
 Math.round10(55.55, -1); // 55.6
 ```

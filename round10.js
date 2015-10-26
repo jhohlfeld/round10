@@ -25,23 +25,29 @@ var decimalAdjust = exports.decimalAdjust = function(type, value, exp) {
     return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
 }
 
-exports.polyfill = function() {
+module.exports = {
+    round10: function(value, exp) {
+        return decimalAdjust('round', value, exp);
+    },
+    floor10: function(value, exp) {
+        return decimalAdjust('floor', value, exp);
+    },
+    ceil10: function(value, exp) {
+        return decimalAdjust('ceil', value, exp);
+    },
+};
+
+module.exports.polyfill = function() {
     // Decimal round
     if (!Math.round10) {
-        Math.round10 = function(value, exp) {
-            return decimalAdjust('round', value, exp);
-        };
+        Math.round10 = module.exports.round10;
     }
     // Decimal floor
     if (!Math.floor10) {
-        Math.floor10 = function(value, exp) {
-            return decimalAdjust('floor', value, exp);
-        };
+        Math.floor10 = module.exports.floor10;
     }
     // Decimal ceil
     if (!Math.ceil10) {
-        Math.ceil10 = function(value, exp) {
-            return decimalAdjust('ceil', value, exp);
-        };
+        Math.ceil10 = module.exports.ceil10;
     }
 };
